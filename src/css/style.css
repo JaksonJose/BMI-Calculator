@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 800;
+}
+
+.body-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-self: center;
+    background: url("/src/image/pexels-mali-maeder-50634.jpg") center/cover no-repeat;
+}
+
+.IMC-container {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 800;
+    
+
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding: 1rem;
+    border-bottom: 5px groove rgba(255, 255, 255, 0.3);
+}
+
+div {
+    padding: 0.8rem;
+    font-size: 1.5rem;
+}
+
+input, button {
+    font-size: 1.5rem;
+    width: 60%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#btn-section {
+    display: flex;
+}
+
+.btn{
+    flex: 2;
+}
+
+button {
+    width:100%;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.panel {
+    font-size: 1.2rem ;
+    border-top: 5px groove rgba(255, 255, 255, 0.3);
+    max-height: 8rem;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.panelHidden {
+    max-height: 0;
+}
+
+@media only screen and (max-width: 340px){
+    h1 {
+        font-size: 1em;
+    }
+    
+    input, button {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    h1 {
+        font-size: 1em;
+    }
+
+    div {
+        font-size: 1.2rem;
+    }
+    
+    input, button {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+}
