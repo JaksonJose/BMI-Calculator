@@ -17,7 +17,7 @@ body{
     height: 100vh;
     justify-content: center;
     align-self: center;
-    background: url("/src/image/pexels-mali-maeder-50634.jpg") center/cover no-repeat;
+    background: url(/src/image/pexels-mali-maeder-50634.jpg) center/cover no-repeat;
 }
 
 .IMC-container {
